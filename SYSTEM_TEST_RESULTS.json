@@ -1,0 +1,311 @@
+{
+  "database": "petshop_audit_b70b90764b38",
+  "timestamp": "2026-10-15T21:49:04.839Z",
+  "results": [
+    {
+      "name": "Customer registration persists a bcrypt password",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate registration and password mismatch leave no partial accounts",
+      "status": "passed"
+    },
+    {
+      "name": "PHP bcrypt hashes remain compatible with customer login",
+      "status": "passed"
+    },
+    {
+      "name": "Incorrect login has a visible generic message",
+      "status": "passed"
+    },
+    {
+      "name": "Client and admin login; role restrictions",
+      "status": "passed"
+    },
+    {
+      "name": "Cross-site POST rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Client pet create and edit via real server forms",
+      "status": "passed"
+    },
+    {
+      "name": "Profile updates persist in user and customer records",
+      "status": "passed"
+    },
+    {
+      "name": "Grooming booking creates client/admin notifications",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate grooming slot is rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Admin confirms grooming; client sees updated status",
+      "status": "passed"
+    },
+    {
+      "name": "Client cancels grooming; history retained",
+      "status": "passed"
+    },
+    {
+      "name": "Concurrent grooming requests claim one limited-capacity slot",
+      "status": "passed"
+    },
+    {
+      "name": "Grooming add-ons persist with authoritative total",
+      "status": "passed"
+    },
+    {
+      "name": "Groomer schedule closure blocks bookings",
+      "status": "passed"
+    },
+    {
+      "name": "Product reservation uses database price and deducts stock",
+      "status": "passed"
+    },
+    {
+      "name": "Concurrent cancellation restores stock exactly once",
+      "status": "passed"
+    },
+    {
+      "name": "Concurrent reservations cannot oversell",
+      "status": "passed"
+    },
+    {
+      "name": "Insufficient stock rejected without saving a reservation",
+      "status": "passed"
+    },
+    {
+      "name": "Repeated product submission deducts stock only once",
+      "status": "passed"
+    },
+    {
+      "name": "Admin inventory updates synchronize with client refresh",
+      "status": "passed"
+    },
+    {
+      "name": "Inventory-only editor rejects invalid and stale changes and preserves committed prices",
+      "status": "passed"
+    },
+    {
+      "name": "Product archive respects public/client visibility",
+      "status": "passed"
+    },
+    {
+      "name": "Pet photo validation, persistence, and authorized access",
+      "status": "passed"
+    },
+    {
+      "name": "Customer cannot edit another customer's pet or access its photo",
+      "status": "passed"
+    },
+    {
+      "name": "Simplified pet creation rejects invalid uploads and derives ownership from the session",
+      "status": "passed"
+    },
+    {
+      "name": "Pet archive preserves records and appointment history",
+      "status": "passed"
+    },
+    {
+      "name": "Every admin and client dashboard view renders",
+      "status": "passed"
+    },
+    {
+      "name": "Loyalty poster policy: fifth/tenth 50%, sixth regular, eleventh lifetime VIP, duplicate safety and invoice rounding",
+      "status": "passed"
+    },
+    {
+      "name": "Loyalty lifetime membership survives staff corrections and rejects the old redemption reset",
+      "status": "passed"
+    },
+    {
+      "name": "Groomer, schedule and service editing persist",
+      "status": "passed"
+    },
+    {
+      "name": "PDF export produces a real authorized PDF document",
+      "status": "passed"
+    },
+    {
+      "name": "Original product image endpoint resolves to public image",
+      "status": "passed"
+    },
+    {
+      "name": "Notification recipient isolation and mark-as-read",
+      "status": "passed"
+    },
+    {
+      "name": "Messaging: two-way persistence, retry deduplication, notifications, read counters and privacy",
+      "status": "passed"
+    },
+    {
+      "name": "Messaging: serialized database rate limits survive concurrent sends and history paginates",
+      "status": "passed"
+    },
+    {
+      "name": "Attendance automation: grace, checked-in, progress, pending, completed, home service, timezone, concurrency and idempotency",
+      "status": "passed"
+    },
+    {
+      "name": "Automatic product expiry notifies the client once and safely restores uncollected stock",
+      "status": "passed"
+    },
+    {
+      "name": "Admin All/Unread filters and mark-all enforce recipient isolation",
+      "status": "passed"
+    },
+    {
+      "name": "Legacy PHP uses the same database and enforces pet ownership",
+      "status": "failed",
+      "error": "Cannot read properties of null (reading '1')"
+    },
+    {
+      "name": "Cart: direct quote is private, authenticated, read-only and returns the saved profile",
+      "status": "passed"
+    },
+    {
+      "name": "Cart: one checkout persists multiple items, saved profile and payment, using real prices",
+      "status": "passed"
+    },
+    {
+      "name": "Cart: cancellation restores every item exactly once under concurrent requests",
+      "status": "passed"
+    },
+    {
+      "name": "Cart: stock/price conflicts roll back the entire reservation and inventory changes",
+      "status": "passed"
+    },
+    {
+      "name": "Cart: repeated and conflicting submissions cannot create duplicate reservations",
+      "status": "passed"
+    },
+    {
+      "name": "Cart: pickup, profile and payment validation cannot be bypassed or forged",
+      "status": "passed"
+    },
+    {
+      "name": "Cart: concurrent different checkouts cannot oversell any selected product",
+      "status": "passed"
+    },
+    {
+      "name": "Cart: configured pickup days and hours are enforced server-side",
+      "status": "passed"
+    },
+    {
+      "name": "Receipt: product pickup grace follows product policy, separately from grooming",
+      "status": "passed"
+    },
+    {
+      "name": "Receipt: VAT exclusive snapshot, admin/customer access, printing and PDF filename",
+      "status": "passed"
+    },
+    {
+      "name": "Receipt: inclusive/exempt totals, zero-price validation and explicit free configuration",
+      "status": "passed"
+    },
+    {
+      "name": "Receipt: long item tables paginate and historical zero-price discrepancies are preserved and audited",
+      "status": "passed"
+    },
+    {
+      "name": "Grooming receipt: submit redirects to receipt with stored service/add-ons and VAT-inclusive snapshot",
+      "status": "passed"
+    },
+    {
+      "name": "Grooming receipt: PDF/admin access, owner isolation and immutable booking prices",
+      "status": "passed"
+    },
+    {
+      "name": "Grooming receipt: home service, VAT-exclusive calculation and no fabricated home-service grace",
+      "status": "passed"
+    },
+    {
+      "name": "Grooming receipt: completed loyalty discount and historical fallback preserve stored totals",
+      "status": "passed"
+    },
+    {
+      "name": "Messaging images: customer/admin exchange, private downloads, persistence and notifications",
+      "status": "passed"
+    },
+    {
+      "name": "Messaging images: retries deduplicate attachments and conflicting requests are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Messaging images: invalid/oversized uploads and cross-customer conversation access are blocked",
+      "status": "passed"
+    },
+    {
+      "name": "Google sign-in button, state/PKCE redirect and safe callback rejection",
+      "status": "passed"
+    },
+    {
+      "name": "Google identities preserve account history, separate roles and reject unsafe email links",
+      "status": "passed"
+    },
+    {
+      "name": "Google concurrent first login creates one identity and customer",
+      "status": "passed"
+    },
+    {
+      "name": "Google customer application session: profile, checkout, history, receipts, roles and logout",
+      "status": "passed"
+    },
+    {
+      "name": "Reviews: authentication, role restrictions and field validation remain enforced",
+      "status": "passed"
+    },
+    {
+      "name": "Reviews: no booking needed and even negative feedback is published immediately",
+      "status": "passed"
+    },
+    {
+      "name": "Reviews: edits publish immediately, owner isolation and stale version checks remain",
+      "status": "passed"
+    },
+    {
+      "name": "Reviews: optional links accept unfinished transactions but enforce ownership and duplicates",
+      "status": "passed"
+    },
+    {
+      "name": "Reviews: public/customer/admin routes and durable rate limit still work",
+      "status": "passed"
+    },
+    {
+      "name": "Authenticated password change keeps this session and revokes old sessions",
+      "status": "passed"
+    },
+    {
+      "name": "Grooming reminders use latest completed visit and retain failed sends for retry",
+      "status": "passed"
+    },
+    {
+      "name": "Suspended account session denied immediately",
+      "status": "passed"
+    },
+    {
+      "name": "Repeated invalid administrator passwords trigger timed lockout",
+      "status": "passed"
+    },
+    {
+      "name": "Password update invalidates previously issued session",
+      "status": "passed"
+    },
+    {
+      "name": "Logout clears the session cookie",
+      "status": "passed"
+    },
+    {
+      "name": "Super Admin bootstrap and authorized account management",
+      "status": "passed"
+    },
+    {
+      "name": "Password reset verification is one-time and invalidates sessions",
+      "status": "passed"
+    }
+  ]
+}
